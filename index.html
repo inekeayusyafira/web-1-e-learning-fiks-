@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Awal - Lensa Kehidupan</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <style>
+        /* Background Gradient */
+        body {
+            background: linear-gradient(135deg, #f06, #8e44ad, #3498db);
+            background-size: 200% 200%;
+            animation: gradientBackground 10s ease infinite;
+            color: #fff;
+        }
+
+        @keyframes gradientBackground {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        
+        /* Jumbotron Styling */
+        .jumbotron {
+            background-color: rgba(255, 255, 255, 0.8);
+            color: #6a1b9a;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Container Background for Content Sections */
+        .content-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            color: #333;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Button Styling */
+        .btn-primary, .btn-secondary {
+            border: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-primary {
+            background-color: #6a1b9a;
+        }
+
+        .btn-primary:hover {
+            background-color: #8e44ad;
+        }
+
+        .btn-secondary {
+            background-color: #3498db;
+        }
+
+        .btn-secondary:hover {
+            background-color: #2980b9;
+        }
+
+        /* Section Headings */
+        h1, h2, h3 {
+            color: #855cc9;
+        }
+
+        .text-white { color: #111111; }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Lensa Kehidupan</a>
+</nav>
+
+<!-- Main Content -->
+<div class="container mt-5">
+    <div class="jumbotron">
+        <h1>Lensa Kehidupan By Ineke</h1>
+        <p>"Believe you can and you're halfway there."!</p> 
+    </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            <div class="content-section">
+                <h3>Refleksi Pribadi</h3>
+                <p>Menghadapi Kegagalan: Kegagalan terbesar dalam hidupku adalah saat aku menyerah sebelum mencoba.</p>
+                <p>Menemukan Ketenangan di Tengah Kesibukan: Dalam dunia yang serba cepat, aku menemukan ketenangan.</p>
+                <p>Pentingnya Membangun Relasi: Hubungan yang baik dengan orang lain adalah harta yang tak ternilai.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="content-section">
+                <h3>Tips untuk Pembaca</h3>
+                <p>Latihlah Syukur: Mulailah hari dengan mencatat tiga hal yang kamu syukuri.</p>
+                <p>Jangan Takut untuk Berbeda: Menjadi diri sendiri adalah bentuk keberanian terbesar.</p>
+                <p>Keluar dari Zona Nyaman: Cobalah hal-hal baru untuk mengembangkan diri.</p>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="content-section">
+                <h3>Kutipan Inspiratif</h3>        
+                <p>"Hidup itu sederhana, tapi kita yang membuatnya rumit." - Confucius</p>
+                <p>"Jadilah dirimu sendiri, orang lain sudah terpakai." - Oscar Wilde</p>
+                <p>"Hidup yang paling bermakna adalah hidup yang penuh dengan tantangan." - Eleanor Roosevelt</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="content-section">
+                <h2>About Me</h2>
+                <p>Ineke, seorang perempuan berusia 22 tahun yang berasal dari Riau, kini sedang menjalani petualangan baru di kota Bandung. Dengan semangat yang membara, ia ingin berbagi kisah perjalanan hidupnya</p>
+            </div>
+        </div>
+        <div class="col-md-8">
+            <div class="content-section">
+                <h2>Menemukan Rumah Baru di Kota Kembang</h2>
+                <h5>BANDUNG, 22 OCTOBER 2024</h5>
+                <p>Bandung, dengan segala hiruk pikuk dan keindahannya, telah menjadi kanvas baru bagi perjalanan hidupku. Di sini, aku belajar tentang arti keberanian, kebebasan, dan pentingnya keluar dari zona nyaman</p>
+                <br>
+                <h2>Dari Kegagalan Menuju Kesuksesan</h2>
+                <h5>BANDUNG, 22 OCTOBER 2024</h5>
+                <p>Setiap kegagalan adalah pelajaran berharga yang telah membawaku ke titik ini</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="dashboard.html" class="btn btn-primary">Go to Dashboard</a>
+        <a href="login.html" class="btn btn-secondary">Login</a>
+        <a href="register.html" class="btn btn-primary">Register</a>
+    </div>
+</div>
+
+<!-- Footer Navbar -->
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark mt-5">
+    <a class="navbar-brand" href="#">Lensa Kehidupan</a>
+</nav>
+
+<script>
+    function goToHome() {
+        window.location.href = "dashboard.html";
+    }
+
+    function logout() {
+        alert("Anda telah logout.");
+        goToHome();
+    }
+</script>
+
+</body>
+</html>
